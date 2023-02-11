@@ -46,23 +46,6 @@ input[type="password"],
   padding: 8px;
 }
 
-input[type="submit"] {
-  border-radius: 5px;
-  margin-top: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 15px;
-  background: #0a3d62;
-  border: 0;
-  color: #fff;
-  padding: 10px 20px;
-  transition: all 0.2s ease-out;
-}
-
-input[type="submit"]:hover {
-  background: #1273b8;
-}
-
 .wisnu {
   color: #1ad3ca;
 }
@@ -128,4 +111,21 @@ input[type="submit"]:hover {
 
 .done span {
   font-size: 40px;
+}
+
+button {
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  background: #0a3d62;
+  border: 0;
+  color: #fff;
+  padding: 10px 20px;
+  transition: all 0.2s ease-out;
+}
+
+button:hover {
+  background: #1273b8;
 }
