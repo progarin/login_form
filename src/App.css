@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  font-family: sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  font-family: "Poppins", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #0a3d62;
+  opacity: 1;
+  background-image: radial-gradient(circle at center center, #82ccdd, #0a3d62), repeating-radial-gradient(circle at center center, #82ccdd, #82ccdd, 40px, transparent 80px, transparent 40px);
+  background-blend-mode: multiply;
+}
+
+span {
+  display: inline;
+}
+
+label {
+  font-weight: 600;
+  color: #0a3d62;
+}
+
+input[type="text"],
+input[type="password"] {
+  background-color: rgb(247, 247, 247);
+  border-radius: 5px;
+  border: 0.5px solid rgba(10, 61, 98, 0.555);
+}
+
+input[type="text"],
+input[type="password"],
+:focus {
+  opacity: 0.9;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #eee;
+}
+
+input[type="text"],
+input[type="password"],
+::placeholder {
+  color: #0a3d62;
+  padding: 8px;
+}
+
+input[type="submit"] {
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  background: #0a3d62;
+  border: 0;
+  color: #fff;
+  padding: 10px 20px;
+  transition: all 0.2s ease-out;
+}
+
+input[type="submit"]:hover {
+  background: #1273b8;
+}
+
+.wisnu {
+  color: #1ad3ca;
+}
+
+.title-me {
+  margin: 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.user_icon {
+  font-size: 100px;
+  color: #0a3d62;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 300px;
+
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: rgb(226, 11, 11);
+  font-size: 12px;
+}
+
+.title {
+  color: #0a3d62;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+
+.success {
+  text-align: center;
+  font-weight: bold;
+  color: #11beb6;
+  margin-top: 2rem;
+  font-size: 20px;
+}
+
+.done span {
+  font-size: 40px;
 }
